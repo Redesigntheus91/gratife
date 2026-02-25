@@ -7,32 +7,49 @@
 
   <style>
     body {
-      background-color: #F4F1E8; /* warm cream *;
+      background-color: #ffffff;
       color: #000000;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
     }
 
     .logo {
-      width: 180px;
+      width: 200px;
       max-width: 80%;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
-    p {
-      font-size: 18px;
+    .headline {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .email {
+      font-size: 16px;
       margin-bottom: 30px;
+    }
+
+    .email a {
       color: #000000;
-      line-height: 1.6;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     .button {
       display: block;
-      max-width: 280px;
-      margin: 14px auto;
+      width: 100%;
+      margin: 12px 0;
       padding: 16px;
-      background-color: #9BCB3C; /* leaf green from logo */
+      background-color: #9BCB3C;
       color: #000000;
       text-decoration: none;
       font-weight: bold;
@@ -55,23 +72,31 @@
 
 <body>
 
-  <!-- Logo instead of text title -->
-  <img src="Gratife Logo.png" alt="Gratife Logo" class="logo">
+  <div class="container">
 
-  <p>
-   Sell Your Gaming Items to Us! We Also Offer Repairs! Email Directly to Learn More!<br>
-    Email Address: BeGratife@gmail.com
-  </p>
+    <img src="Gratife Logo.png" alt="Gratife Logo" class="logo">
 
-  <a class="button" href="https://www.mercari.com/u/gratife/">Shop on Mercari</a>
-  <a class="button" href="https://www.ebay.com/usr/gratife">Shop on eBay</a>
-  <a class="button" href="https://www.instagram.com/gratife_gaming/">Follow on Instagram</a>
-  <a class="button" href="https://www.tiktok.com/@gratifegaming">Follow on TikTok</a>
-  <a class="button" href="https://www.youtube.com/@gratife6378">Follow on YouTube</a>
+    <div class="headline">
+      Sell Your Gaming Items to Us!<br>
+      We Also Offer Repairs!
+    </div>
 
-  <footer>
-    © Gratife Gaming
-  </footer>
+    <div class="email">
+      Email Directly to Learn More:<br>
+      <a href="mailto:BeGratife@gmail.com">BeGratife@gmail.com</a>
+    </div>
+
+    <a class="button" href="https://www.mercari.com/u/gratife/">Shop on Mercari</a>
+    <a class="button" href="https://www.ebay.com/usr/gratife">Shop on eBay</a>
+    <a class="button" href="https://www.instagram.com/gratife_gaming/">Follow on Instagram</a>
+    <a class="button" href="https://www.tiktok.com/@gratifegaming">Follow on TikTok</a>
+    <a class="button" href="https://www.youtube.com/@gratife6378">Follow on YouTube</a>
+
+    <footer>
+      © Gratife Gaming
+    </footer>
+
+  </div>
 
 </body>
 </html>
