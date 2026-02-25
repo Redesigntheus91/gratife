@@ -6,24 +6,30 @@
   <title>Gratife Gaming</title>
 
   <style>
+    /* Prevent weird mobile overflow */
+    * { box-sizing: border-box; }
+    html, body { width: 100%; margin: 0; padding: 0; overflow-x: hidden; }
+
     body {
       background-color: #ffffff;
       color: #000000;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 60px 20px;
-      margin: 0;
+      padding: 40px 16px; /* slightly smaller side padding */
     }
 
     .container {
-      max-width: 500px;
+      max-width: 520px;
       margin: 0 auto;
+      width: 100%;
     }
 
     .logo {
+      display: block;
       width: 200px;
-      max-width: 80%;
-      margin-bottom: 30px;
+      max-width: 90vw; /* never wider than the screen */
+      height: auto;
+      margin: 0 auto 22px;
     }
 
     .headline {
@@ -35,25 +41,28 @@
 
     .email {
       font-size: 16px;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
+      line-height: 1.5;
     }
 
     .email a {
       color: #000000;
       text-decoration: none;
       font-weight: bold;
+      word-break: break-word; /* safety on small screens */
     }
 
     .button {
       display: block;
       width: 100%;
-      margin: 12px 0;
-      padding: 16px;
+      max-width: 420px;     /* prevents edge-to-edge overflow */
+      margin: 12px auto;    /* centered */
+      padding: 16px 14px;   /* safe horizontal padding */
       background-color: #9BCB3C;
       color: #000000;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 8px;
+      border-radius: 10px;
       transition: 0.2s ease-in-out;
     }
 
@@ -63,7 +72,7 @@
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 32px;
       font-size: 14px;
       color: #555555;
     }
@@ -71,9 +80,7 @@
 </head>
 
 <body>
-
   <div class="container">
-
     <img src="Gratife Logo.png" alt="Gratife Logo" class="logo">
 
     <div class="headline">
@@ -95,8 +102,6 @@
     <footer>
       © Gratife Gaming
     </footer>
-
   </div>
-
 </body>
 </html>
