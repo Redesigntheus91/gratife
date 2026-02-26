@@ -63,8 +63,9 @@ app.delete('/api/items/:id', async (req, res) => {
   res.status(204).send();
 });
 
-// serve static client if placed in public folder
-app.use(express.static(path.join(__dirname, '../')));
+// serve static client from server/public and mount inventory at /inventory
+app.use('/inventory', express.static(path.join(__dirname, 'public', 'inventory')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {

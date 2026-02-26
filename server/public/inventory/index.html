@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gratife Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Login Screen -->
+  <div class="login-screen" id="login-screen">
+    <div class="login-box">
+      <h1>🔒 Inventory Access</h1>
+      <div class="login-error" id="login-error"></div>
+      <form id="login-form">
+        <input type="password" id="password" placeholder="Enter password" />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main App -->
+  <div id="app" class="container hidden">
+    <div class="header">
+      <div class="header-left">
+        <h1>📦 Inventory</h1>
+        <div class="total-count" id="total-count">0</div>
+      </div>
+      <button id="logout" class="logout-btn">Logout</button>
+    </div>
+
+    <div class="quick-add">
+      <h2>Quick Add:</h2>
+      <div class="button-grid" id="preset-grid"></div>
+    </div>
+
+    <div class="items-section">
+      <div id="items-list"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
